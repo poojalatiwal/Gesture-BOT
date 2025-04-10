@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="s_style.css">
+    <title>Analytics</title>
+    <style>
+        body {
+            padding-top: 70px; 
+            position: relative;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            height: 100vh;
+            background-color: #282828;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./bot.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            z-index: -1; 
+        }
+
+        .main-content {
+                width: 400px;
+                height: 200px;
+                margin: 0 auto; 
+                padding: 40px; 
+                border-radius: 10px; 
+                position: absolute; 
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%, -50%); 
+                background: rgba(0, 0, 0, 0.806); 
+                z-index: 1; 
+            }
+            
+
+        h2 {
+            color: #f6e5cf;
+        }
+
+        p {
+            color: #f6e5cf;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #4a4480;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Analytics Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.html">Log Out</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Robot_status.html">Robot Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Control_Panel.html">Control Panel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bot-management.html">Bot Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user-management.html">User Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="analytics.html">Analytics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="maintainance.html">Maintenance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html">Help</a>
+                </li>
+            </ul>
+    </nav>
+
+    <main class="container">
+        <div class="main-content">
+            <h2>Analytics Overview</h2>
+            <p>Analytics features coming soon!</p>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bot Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #0e0e1a;
+      color: #f6e5cf;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 70px;
+    }
+    .navbar-custom {
+      background-color: #362c63;
+    }
+    .navbar-brand, .nav-link {
+      color: #f6e5cf !important;
+    }
+    .box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      margin-bottom: 30px;
+    }
+    h3 {
+      border-bottom: 2px solid #6c63ff;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #6c63ff;
+      border: none;
+    }
+    button:hover {
+      background-color: #594dcf;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bot Management</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="logout.html">Log Out</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Robot_status.html">Robot Status</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Control_Panel.html">Control Panel</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="bot-management.html">Bot Management</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="user-management.html">User Management</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="analytics.html">Analytics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="maintainance.html">Maintenance</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="help.html">Help</a>
+        </li>
+    </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="box">
+      <h3>Bot List</h3>
+      <div id="bot-list"></div>
+      <button class="btn btn-primary mt-2" id="add-bot">Add Bot</button>
+    </div>
+
+    <div class="box">
+      <h3>Gesture List</h3>
+      <div id="gesture-list"></div>
+      <button class="btn btn-primary mt-2" id="configure-gestures">Configure Gestures</button>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

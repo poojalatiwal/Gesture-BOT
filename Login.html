@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://media.istockphoto.com/id/1082233440/photo/abstract-background-cover-intro.webp?b=1&s=170667a&w=0&k=20&c=nfuf8z-PVuE05fSDeFjW2BGI3_K0H_H8NbozC58XzlY=') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    .login-container {
+      max-width: 350px;
+      margin: 100px auto;
+      padding: 25px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(72, 52, 135, 0.866);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .login-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(35, 19, 78, 0.866);
+    }
+
+    h2.heading {
+      font-size: 2em;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    input[type="submit"] {
+      width: 65%;
+      padding: 13px;
+      background-color: #2f1d5b;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #201646;
+    }
+
+    .register-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: #9d72de;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .register-link:hover {
+      color: #bb50dc;
+    }
+
+    img.logo {
+      max-width: 60px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Logo" class="logo" />
+    <h2 class="heading">Welcome</h2>
+
+    <form id="login-form" action="#">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="submit" value="Login" />
+    </form>
+
+    <a href="#" class="register-link">Don't have an account? Register</a>
+  </div>
+
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "1234") {
+        sessionStorage.setItem("loggedIn", "true");
+        window.location.href = "index.html"; // Redirect on success
+      } else {
+        alert("Login failed! Incorrect username or password.");
+      }
+    });
+  </script>
+</body>
+</html>
