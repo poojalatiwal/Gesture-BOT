@@ -104,9 +104,9 @@
       e.preventDefault();
 
       const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
+      const password = document.getElementById("123456").value;
 
-      if (username === "admin" && password === "1234") {
+      if (username === "username" && password === "123456") {
         sessionStorage.setItem("loggedIn", "true");
         window.location.href = "index.html"; 
       } else {
