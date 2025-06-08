@@ -19,7 +19,7 @@
 
     body::before {
       content: '';
-      position: absolute;
+      position:fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -29,6 +29,7 @@
       background-position: center;
       filter: blur(10px);
       z-index: -1;
+      pointer-events: none;
     }
 
     .main-content {
@@ -38,6 +39,7 @@
       margin: 100px auto;
       max-width: 900px;
       z-index: 1;
+      position: relative;
     }
 
     .highlight-box {
